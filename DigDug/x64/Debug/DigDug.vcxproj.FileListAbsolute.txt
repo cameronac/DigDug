@@ -1,0 +1,2 @@
+C:\Users\Cameron Collins\Desktop\Projects\DigDug\DigDug\x64\Debug\DigDug.exe
+C:\Users\Cameron Collins\Desktop\Projects\DigDug\DigDug\x64\Debug\DigDug.pdb
