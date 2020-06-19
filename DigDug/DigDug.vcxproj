@@ -145,7 +145,23 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="EventController.cpp" />
+    <ClCompile Include="GameController.cpp" />
+    <ClCompile Include="GroundController.cpp" />
+    <ClCompile Include="LevelController.cpp" />
+    <ClCompile Include="PlayerController.cpp" />
+    <ClCompile Include="RenderController.cpp" />
     <ClCompile Include="Source.cpp" />
+    <ClCompile Include="WindowController.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="EventController.h" />
+    <ClInclude Include="GameController.h" />
+    <ClInclude Include="GroundController.h" />
+    <ClInclude Include="LevelController.h" />
+    <ClInclude Include="PlayerController.h" />
+    <ClInclude Include="RenderController.h" />
+    <ClInclude Include="WindowController.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
