@@ -1,10 +1,5 @@
 ﻿  EventController.cpp
-  GameController.cpp
-  GroundController.cpp
-  LevelController.cpp
-  PlayerController.cpp
   RenderController.cpp
   Source.cpp
-  WindowController.cpp
   Generating Code...
   DigDug.vcxproj -> C:\Users\Cameron Collins\Desktop\Projects\DigDug\DigDug\x64\Debug\DigDug.exe
