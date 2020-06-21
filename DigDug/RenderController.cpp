@@ -21,8 +21,23 @@ RenderController::~RenderController() {
 
 //Public
 
-//TODO: Add Texture Method| Arguments are &Texture, &Rect: Then added to a Model then updates in renderer
-//TODO: Add Shape Method| Arguments are &Rect, Fill? bool: Then added to a Model then updates in renderer
+//Add Texture to Rendering Process
+void RenderController::addTexture(TextureContainer &texture)
+{
+	textures.push_back(&texture);
+}
+
+//Add Shape to Rendering Process
+void RenderController::addShape(ShapeContainer &shape)
+{
+	shapes.push_back(&shape);
+}
+
+//Add Font to Rendering Process
+void RenderController::addFont(FontContainer &font)
+{
+	fonts.push_back(&font);
+}
 
 //Updates Renderer Every Frame
 void RenderController::updateRenderer() {

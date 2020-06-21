@@ -19,6 +19,12 @@
     <Filter Include="Header Files\Controllers">
       <UniqueIdentifier>{848a9de1-8815-4301-b3e4-ff6b9f306a6c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Models">
+      <UniqueIdentifier>{3148db30-b854-477e-9fe4-60331a0e5653}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Models">
+      <UniqueIdentifier>{b1975425-40eb-424e-b94c-6b8a00c0cacf}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source.cpp">
@@ -45,6 +51,15 @@
     <ClCompile Include="RenderController.cpp">
       <Filter>Source Files\Controllers</Filter>
     </ClCompile>
+    <ClCompile Include="TextureContainer.cpp">
+      <Filter>Source Files\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="ShapeContainer.cpp">
+      <Filter>Source Files\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="FontContainer.cpp">
+      <Filter>Source Files\Models</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="EventController.h">
@@ -67,6 +82,15 @@
     </ClInclude>
     <ClInclude Include="WindowController.h">
       <Filter>Header Files\Controllers</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureContainer.h">
+      <Filter>Header Files\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="ShapeContainer.h">
+      <Filter>Header Files\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="FontContainer.h">
+      <Filter>Header Files\Models</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

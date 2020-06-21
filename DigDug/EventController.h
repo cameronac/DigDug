@@ -15,6 +15,13 @@ public:
 
 	static SDL_Event event;
 
+	//Keyboard Input
+	static bool rightKey;
+	static bool leftKey;
+	static bool upKey;
+	static bool downKey;
+
+
 private:
 	EventController();
 	~EventController();

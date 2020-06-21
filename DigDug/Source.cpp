@@ -1,4 +1,5 @@
 #include <SDL.h>
+#include <iostream>
 #include "WindowController.h"
 #include "RenderController.h"
 #include "EventController.h"
@@ -17,6 +18,7 @@ int main(int argc, char* argv[]) {
 	//Game Loop 
 	while (true) {
 		eventController->updateEvents();
+		std::cout << "Right Key: " << EventController::rightKey << std::endl;
 	}
 
 	//Quit SDL

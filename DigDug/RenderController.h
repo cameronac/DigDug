@@ -3,6 +3,11 @@
 #include <SDL.h>
 #include "WindowController.h"
 
+//Models
+#include "TextureContainer.h"
+#include "ShapeContainer.h"
+#include "FontContainer.h"
+
 
 class RenderController
 {
@@ -18,9 +23,14 @@ public:
 	WindowController* windowController;
 
 	//Objects to Render
-	//Texture to Render Vector std::vector<>
-	//Shapes to Render Vector std::vector<>
+	std::vector<TextureContainer*> textures;
+	std::vector<ShapeContainer*> shapes;
+	std::vector<FontContainer*> fonts;
 
+	//Methods
+	void addTexture(TextureContainer &texture);
+	void addShape(ShapeContainer &shape);
+	void addFont(FontContainer &font);
 	void updateRenderer();
 
 private:
