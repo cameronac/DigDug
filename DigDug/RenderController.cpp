@@ -14,6 +14,7 @@ RenderController::RenderController() {
 
 	//Loop Through Objects
 	ShapeContainer* rect = new ShapeContainer(true, SDL_Rect{ 10, 10, 10, 10 });
+	rect->color->g = 0x00;
 	shapes.push_back(rect);
 }
 
@@ -61,7 +62,7 @@ void RenderController::updateRenderer() {
 	
 	for (int i = 0; i < shapes.size(); i++) {
 
-		if (SDL_SetRenderDrawColor(renderer, 0xFF, 0x00, 0x00, 0xFF) == -1) {
+		if (SDL_SetRenderDrawColor(renderer, shapes[i]->color->r, shapes[i]->color->g, shapes[i]->color->b, shapes[i]->color->a) == -1) {
 			printf("Error Setting Render Draw Color!");
 		}
 

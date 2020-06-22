@@ -145,6 +145,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Color.cpp" />
     <ClCompile Include="EventController.cpp" />
     <ClCompile Include="FontContainer.cpp" />
     <ClCompile Include="GameController.cpp" />
@@ -158,6 +159,7 @@
     <ClCompile Include="WindowController.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Color.h" />
     <ClInclude Include="EventController.h" />
     <ClInclude Include="FontContainer.h" />
     <ClInclude Include="GameController.h" />

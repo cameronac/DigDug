@@ -1,5 +1,6 @@
 #pragma once
 #include <SDL.h>
+#include "Color.h"
 
 struct ShapeContainer
 {
@@ -8,5 +9,6 @@ struct ShapeContainer
 
 	bool fillRect;
 	SDL_Rect* rect;
+	Color* color;
 };
 
