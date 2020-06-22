@@ -9,6 +9,7 @@
 #include "FontContainer.h"
 
 
+//Singleton
 class RenderController
 {
 public:

@@ -14,7 +14,7 @@ int main(int argc, char* argv[]) {
 	WindowController* windowController = &WindowController::Get();
 	RenderController* renderController = &RenderController::Get();
 	EventController* eventController = &EventController::Get();
-
+	GameController* gameController = &GameController::Get();
 
 	//Game Loop 
 	while (true) {

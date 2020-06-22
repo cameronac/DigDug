@@ -1,6 +1,7 @@
 #pragma once
 #include <SDL.h>
 
+//Singleton
 class WindowController
 {
 
