@@ -1,5 +1,7 @@
 #pragma once
 
+#include "PlayerController.h"
+
 //Singleton
 class GameController
 {
@@ -10,6 +12,12 @@ public:
 		static GameController instance;
 		return instance;
 	}
+
+	static PlayerController* playerController;
+
+	static void update();
+
+
 
 private:
 	GameController();

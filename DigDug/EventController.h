@@ -15,6 +15,7 @@ public:
 	static void updateEvents();
 
 	static SDL_Event event;
+	static bool quit; //Application Lifecycle
 
 	//Keyboard Input
 	static bool rightKey;

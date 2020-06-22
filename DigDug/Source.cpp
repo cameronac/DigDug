@@ -3,6 +3,7 @@
 #include "WindowController.h"
 #include "RenderController.h"
 #include "EventController.h"
+#include "GameController.h"
 
 //Entry Point
 int main(int argc, char* argv[]) {
@@ -17,9 +18,10 @@ int main(int argc, char* argv[]) {
 	GameController* gameController = &GameController::Get();
 
 	//Game Loop 
-	while (true) {
+	while (!eventController->quit) {
 		eventController->updateEvents();
-		std::cout << "Right Key: " << EventController::rightKey << std::endl;
+		gameController->update();
+		renderController->updateRenderer();
 	}
 
 	//Quit SDL

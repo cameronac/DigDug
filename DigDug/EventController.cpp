@@ -16,6 +16,7 @@ bool EventController::rightKey = false;
 bool EventController::leftKey = false;
 bool EventController::upKey = false;
 bool EventController::downKey = false;
+bool EventController::quit = false;
 
 //Public 
 
@@ -27,7 +28,7 @@ void EventController::updateEvents() {
 
 		//Quit Pressed
 		if (event.type == SDL_QUIT) {
-			printf("Quit Pressed");
+			quit = true;
 		}
 
 		//Keyboard

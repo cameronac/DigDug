@@ -69,5 +69,5 @@ void PlayerController::move() {
 }
 
 bool PlayerController::checkCollision() {
-
+	return false;
 }	
