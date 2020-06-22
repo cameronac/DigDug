@@ -15,6 +15,7 @@ int main(int argc, char* argv[]) {
 	RenderController* renderController = &RenderController::Get();
 	EventController* eventController = &EventController::Get();
 
+
 	//Game Loop 
 	while (true) {
 		eventController->updateEvents();
