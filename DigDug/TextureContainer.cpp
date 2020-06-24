@@ -2,12 +2,9 @@
 #include "RenderController.h"
 
 //Constructor
-TextureContainer::TextureContainer(std::string filePath, SDL_Rect& rect) {
+TextureContainer::TextureContainer(const char* filePath, SDL_Rect& rect, SDL_Renderer &renderer) {
 
-	RenderController* renderController = &RenderController::Get();
-
-	//this->texture = SDL_CreateTextureFromSurface(renderController->renderer, &surface);
-	
+	this->texture = IMG_LoadTexture(&renderer, filePath); //Get Texture
 	this->rect = new SDL_Rect{ rect.x, rect.y, rect.w, rect.h };
 }
 

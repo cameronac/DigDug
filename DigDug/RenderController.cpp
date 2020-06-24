@@ -1,6 +1,7 @@
 #include "RenderController.h"
 #include <stdio.h>
 #include <iostream>
+#include <sstream>
 
 //Constructor
 RenderController::RenderController() {
@@ -12,10 +13,16 @@ RenderController::RenderController() {
 		printf("Error Renderer: Not Created!");
 	}
 
-	//Loop Through Objects
+	//Create Shape
 	ShapeContainer* rect = new ShapeContainer(true, SDL_Rect{ 10, 10, 10, 10 });
 	rect->color->g = 0x00;
 	shapes.push_back(rect);
+
+	//Create Texture
+	const char* filePath = "../Assets/grass_block.png";
+	SDL_Rect anotherRect { 100, 100, 50, 50 };
+	TextureContainer* texture = new TextureContainer(&*filePath, anotherRect, *renderer);
+	textures.push_back(texture);
 }
 
 //Destructor
@@ -93,10 +100,9 @@ void RenderController::displayTextures()
 {
 	//Display Textures
 	for (int i = 0; i < textures.size(); i++) {
-		//if (SDL_RenderCopy(renderer, texture[i].)) {
-
-		//}
-		break;
+		if (SDL_RenderCopy(renderer, textures[i]->texture, NULL, textures[i]->rect) == 1) {
+			printf("Texture Couldn't Copy to Renderer!");
+		}
 	}
 
 }
