@@ -2,5 +2,7 @@
 
 struct FontContainer
 {
+
+	int layer;
 };
 

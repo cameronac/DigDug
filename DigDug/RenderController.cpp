@@ -14,14 +14,14 @@ RenderController::RenderController() {
 	}
 
 	//Create Shape
-	ShapeContainer* rect = new ShapeContainer(true, SDL_Rect{ 10, 10, 10, 10 });
+	ShapeContainer* rect = new ShapeContainer(true, SDL_Rect{ 10, 10, 10, 10 }, 0);
 	rect->color->g = 0x00;
 	shapes.push_back(rect);
 
 	//Create Texture
 	const char* filePath = "../Assets/grass_block.png";
 	SDL_Rect anotherRect { 100, 100, 50, 50 };
-	TextureContainer* texture = new TextureContainer(&*filePath, anotherRect, *renderer);
+	TextureContainer* texture = new TextureContainer(&*filePath, anotherRect, *renderer, 0);
 	textures.push_back(texture);
 }
 

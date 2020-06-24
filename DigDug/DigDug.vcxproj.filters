@@ -63,6 +63,9 @@
     <ClCompile Include="Color.cpp">
       <Filter>Source Files\Models</Filter>
     </ClCompile>
+    <ClCompile Include="LayerController.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="EventController.h">
@@ -97,6 +100,9 @@
     </ClInclude>
     <ClInclude Include="Color.h">
       <Filter>Header Files\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="LayerController.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

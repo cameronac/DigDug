@@ -150,6 +150,7 @@
     <ClCompile Include="FontContainer.cpp" />
     <ClCompile Include="GameController.cpp" />
     <ClCompile Include="GroundController.cpp" />
+    <ClCompile Include="LayerController.cpp" />
     <ClCompile Include="LevelController.cpp" />
     <ClCompile Include="PlayerController.cpp" />
     <ClCompile Include="RenderController.cpp" />
@@ -164,6 +165,7 @@
     <ClInclude Include="FontContainer.h" />
     <ClInclude Include="GameController.h" />
     <ClInclude Include="GroundController.h" />
+    <ClInclude Include="LayerController.h" />
     <ClInclude Include="LevelController.h" />
     <ClInclude Include="PlayerController.h" />
     <ClInclude Include="RenderController.h" />
