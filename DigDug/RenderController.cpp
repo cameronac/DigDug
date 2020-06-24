@@ -59,7 +59,24 @@ void RenderController::updateRenderer() {
 	SDL_SetRenderDrawColor(renderer, 0xFF, 0xFF, 0xFF, 0xFF);
 	SDL_RenderClear(renderer);
 
-	
+
+	//Display Objects
+	displayTextures();
+	displayShapes();
+	displayText();
+
+
+	//Update Texture
+	SDL_RenderPresent(renderer);	//Present Renderer
+}
+
+
+
+//Private
+
+void RenderController::displayShapes()
+{
+	//Display Shapes
 	for (int i = 0; i < shapes.size(); i++) {
 
 		if (SDL_SetRenderDrawColor(renderer, shapes[i]->color->r, shapes[i]->color->g, shapes[i]->color->b, shapes[i]->color->a) == -1) {
@@ -70,7 +87,20 @@ void RenderController::updateRenderer() {
 			printf("Error Rendering Fill Rect!");
 		}
 	}
+}
 
-	//Update Texture
-	SDL_RenderPresent(renderer);	//Present Renderer
+void RenderController::displayTextures()
+{
+	//Display Textures
+	for (int i = 0; i < textures.size(); i++) {
+		//if (SDL_RenderCopy(renderer, texture[i].)) {
+
+		//}
+		break;
+	}
+
+}
+
+void RenderController::displayText()
+{
 }

@@ -34,9 +34,14 @@ public:
 	void addFont(FontContainer &font);
 	void updateRenderer();
 
+
 private:
 	RenderController();
 	~RenderController();
+
+	void displayShapes();
+	void displayTextures();
+	void displayText();
 
 };
 
